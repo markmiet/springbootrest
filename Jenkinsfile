@@ -14,7 +14,12 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh 'mvn -B -DskipTests clean package install'
+        sh 'mvn -B -DskipTests clean package'
+      }
+    }
+    stage('archive the artifacts') {
+      steps {
+        archiveArtifacts 'target/*.jar'
       }
     }
   }
