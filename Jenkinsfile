@@ -23,7 +23,4 @@ pipeline {
       }
     }
   }
-  triggers {
-    pollSCM('H/1 * * * *')
-  }
 }
