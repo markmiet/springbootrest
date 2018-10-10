@@ -5,15 +5,11 @@ pipeline {
       args '-v /root/.m2:/root/.m2'
     }
 
-
   }
-    triggers {
-        pollSCM 'H/1 * * * *'
-    }
   stages {
     stage('dev') {
       steps {
-        echo 'testi jhjh'
+        echo 'testi jhjh marko'
       }
     }
     stage('build') {
@@ -27,5 +23,7 @@ pipeline {
       }
     }
   }
-
+  triggers {
+    pollSCM('H/1 * * * *')
+  }
 }
