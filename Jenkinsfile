@@ -27,5 +27,14 @@ pipeline {
         input(message: 'Haluatko varmasti kaynnistaa', id: '1', ok: 'mennaan')
       }
     }
+    stage('') {
+      steps {
+        sh '''echo alku
+cd ./target
+java -jar demo-18.0.2.jar
+echo testi
+'''
+      }
+    }
   }
 }
