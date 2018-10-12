@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication {
 
 	public static void main(String[] args) {
+		32
 		System.out.println("testimaa11markontesti22 ds");
 		System.out.println("maa11markontesti22 ds");
 		
