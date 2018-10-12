@@ -22,5 +22,10 @@ pipeline {
         archiveArtifacts 'target/*.jar'
       }
     }
+    stage('Varmistuskysymys') {
+      steps {
+        input(message: 'Haluatko varmasti kaynnistaa', id: '1', ok: 'mennaan')
+      }
+    }
   }
 }
