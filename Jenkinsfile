@@ -27,7 +27,7 @@ pipeline {
         input(message: 'Haluatko varmasti kaynnistaa', id: '1', ok: 'mennaan')
       }
     }
-    stage('') {
+    stage('ajo') {
       steps {
         sh '''echo alku
 cd ./target
