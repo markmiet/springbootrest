@@ -31,7 +31,7 @@ pipeline {
       steps {
         sh '''echo alku
 cd ./target
-java -jar demo-18.0.2.jar
+nohup java -jar demo-18.0.2.jar
 echo testi
 '''
       }
